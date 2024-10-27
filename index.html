@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Controle de Ponto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Controle de Ponto</h1>
+        <div id="data-hora"></div>
+        
+        <div class="registro">
+            <h2>Registrar Ponto</h2>
+            <input type="datetime-local" id="dataPonto" required>
+            <select id="tipoRegistro" required>
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+                <option value="intervalo">Intervalo</option>
+            </select>
+            <textarea id="justificativa" placeholder="Justificativa (opcional)"></textarea>
+            <button id="registrarBtn">Registrar</button>
+            <button id="visualizarRelatorioBtn">Visualizar Relatório</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
